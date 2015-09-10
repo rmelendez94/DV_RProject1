@@ -11,12 +11,12 @@ head(df)
 require(extrafont)
 require(ggplot2)
 
-#This is actually the first require plot :)
+#This is actually the first required plot :)
 ggplot() + 
   coord_cartesian() + 
   scale_x_continuous() +
   scale_y_continuous() +
-  #facet_grid(PCLASS~SURVIVED) +
+  facet_grid(PCLASS~SURVIVED) +
   labs(title='Titanic') +
   labs(x="Age", y=paste("Fare")) +
   layer(data=df, 
