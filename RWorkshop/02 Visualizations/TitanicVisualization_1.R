@@ -1,7 +1,10 @@
+#Copy original dataframe
 df1 <- df
+
 require(extrafont)
 require(ggplot2)
 
+#Create the Point Plot; Age/Fare
 ggplot() + 
   coord_cartesian() + 
   scale_x_continuous() +

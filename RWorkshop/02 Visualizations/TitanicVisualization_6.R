@@ -1,9 +1,12 @@
-#in 1911 Life Expectancy was 52 average, we chose a number to try and get the upper quartile of those onboard.
+#In 1911 Life Expectancy was 52 years average, we chose a number to try and get the upper quartile of those onboard.
+
+#Copy original data frame excluding null sex and age 39-
 df6 <- subset(df, as.numeric(as.character(AGE)) >= 40 & (SEX == 'female' | SEX == 'male'))
 
 require(extrafont)
 require(ggplot2)
 
+#Create the Bar Plot; Survived/Sex/Count/PClass/Age(40+)
 ggplot() + 
   coord_cartesian() + 
   scale_x_discrete() +

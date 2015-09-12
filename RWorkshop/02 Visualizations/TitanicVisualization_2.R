@@ -1,7 +1,10 @@
+#Copy original data frame excluding null sex
 df2 <- subset(df, SEX == 'female' | SEX == 'male')
+
 require(extrafont)
 require(ggplot2)
 
+#Create the Point Plot: Age/Fare
 ggplot() + 
   coord_cartesian() + 
   scale_x_continuous() +

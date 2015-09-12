@@ -1,7 +1,9 @@
+#Copy original data frame excluding null sex and ages 11+
 df5 <- subset(df, as.numeric(as.character(AGE)) <= 10 & (SEX == 'female' | SEX == 'male'))
 require(extrafont)
 require(ggplot2)
 
+#Create the Point Plot; Survived/Fare/Sex/PClass
 ggplot() + 
   coord_cartesian() + 
   scale_x_discrete() +

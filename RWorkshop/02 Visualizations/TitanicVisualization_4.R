@@ -1,7 +1,9 @@
+#Copy original data frame excluding null sex
 df4 <- subset(df, SEX == 'female' | SEX == 'male')
 require(extrafont)
 require(ggplot2)
 
+#Create Point Plot; Survived/Fare/Sex/PClass
 ggplot() + 
   coord_cartesian() + 
   scale_x_discrete() +
