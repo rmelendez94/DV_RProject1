@@ -13,8 +13,8 @@ sessionInfo()
 ![](./Rplot1.png)
 
 ```{r}
-#source("../01 Data/TitanicData.R", echo = TRUE)
-#source("../02 Visualizations/TitanicVisualization_1.R", echo = TRUE)
+source("../01 Data/TitanicData.R", echo = TRUE)
+source("../02 Visualizations/TitanicVisualization_1.R", echo = TRUE)
 ```
 
 **Method: **
