@@ -25,7 +25,7 @@ source("../01 Data/TitanicData.R", echo = TRUE)
 ```
 
 ####**Method: **
-In Visualization 1, We compared data based on Age and Fare between males, females, and null values. We copied the data frame into a new local data frame, set x and y as continuous, followed by giving them their corresponding labels. The layer in this visualization set the axis; x with age values and y with fare values. It is a point plot that graphs the people's age and corresponding fares in the x/y axis repectively, and the legend is seperated and colored by sex.
+In Visualization 1, We compared data based on Age and Fare between males, females, and null values. We copied the data frame into a new local data frame, set x and y as continuous, followed by giving them their corresponding labels. The layer in this visualization set the axis; x with age values and y with fare values. It is a point plot that graphs the people's age and corresponding fares in the x/y axis repectively, and the legend is separated and colored by sex.
 
 ####**Findings: **
 There did not seem to be a real trend between Age and Fare. Most people in general payed the lower fares regardless of age. Few of them payed in the mid-range, and a few seemed like outliers paying in the highest range.
@@ -56,9 +56,10 @@ Again there did not seem to be a real trend between Age and Fare. Most people in
 ```
 
 ####**Method: **
-
+In Visualization 3, we displayed the survival distribution based on Sex and Fare. We copied the data frame into a new local data frame, set x as discrete and y as continuous, followed by giving them their corresponding labels. The layer in this visualization set x as Sex and y as Fare. It is a point plot that graphs the people's sex and corresponding fares in the x/y axis repectively, and the legend is separated and colored by whether the passengers survived or not.
 
 ####**Findings: **
+This visualization indicates that a greater proportion of the females survived, as compared to males, generally regardless of fare. Some females in the mid-range fare did not survive, while some males in the mid-range fare did survive. In addition, two males who paid above $500 survived.
 
 ***
 
@@ -70,9 +71,10 @@ Again there did not seem to be a real trend between Age and Fare. Most people in
 ```
 
 ####**Method: **
-
+In Visualization 4, we displayed the survival distribution based on Sex,Fare, and Passenger Class. We copied the data frame into a new local data frame, set x as discrete and y as continuous, followed by giving them their corresponding labels. In this visualization, we added a facet to create a matrix, with rows by passenger class and columns by survival. The layer in this visualization set x as Sex and y as Fare. It is a point plot that graphs the people's sex and corresponding fares in the x/y axis repectively, and the legend is separated and colored by passenger sex.
 
 ####**Findings: **
+Among those who did survive, the visualization shows that, across passenger classes, there was not a big difference that sex made in the number of passengers who survived. However, among those who did not survive, we see that passenger class made a significant difference in the number of survivers. Although there are only a few females who did not survive from passenger class 1 and 2, passenger class 3 had a much greater number of non-survivers.
 
 ***
 

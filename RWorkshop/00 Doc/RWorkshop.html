@@ -69,11 +69,15 @@ img {
 <h3>This is how our RStudio is configured:</h3>
 <pre class="r"><code>sessionInfo()</code></pre>
 <pre><code>## R version 3.2.2 (2015-08-14)
-## Platform: x86_64-apple-darwin13.4.0 (64-bit)
-## Running under: OS X 10.10.5 (Yosemite)
+## Platform: x86_64-w64-mingw32/x64 (64-bit)
+## Running under: Windows 8 x64 (build 9200)
 ## 
 ## locale:
-## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+## [1] LC_COLLATE=English_United States.1252 
+## [2] LC_CTYPE=English_United States.1252   
+## [3] LC_MONETARY=English_United States.1252
+## [4] LC_NUMERIC=C                          
+## [5] LC_TIME=English_United States.1252    
 ## 
 ## attached base packages:
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
@@ -159,7 +163,7 @@ source(&quot;../01 Data/TitanicData.R&quot;, echo = TRUE)</code></pre>
 #Not sure if this is really needed?? gives html messy look with errors at end Can we just give more explanation in the method section? </code></pre>
 <div id="method" class="section level4">
 <h4><strong>Method: </strong></h4>
-<p>In Visualization 1, We compared data based on Age and Fare between males, females, and null values. We copied the data frame into a new local data frame, set x and y as continuous, followed by giving them their corresponding labels. The layer in this visualization set the axis; x with age values and y with fare values. It is a point plot that graphs the people’s age and corresponding fares in the x/y axis repectively, and the legend is seperated and colored by sex.</p>
+<p>In Visualization 1, We compared data based on Age and Fare between males, females, and null values. We copied the data frame into a new local data frame, set x and y as continuous, followed by giving them their corresponding labels. The layer in this visualization set the axis; x with age values and y with fare values. It is a point plot that graphs the people’s age and corresponding fares in the x/y axis repectively, and the legend is separated and colored by sex.</p>
 </div>
 <div id="findings" class="section level4">
 <h4><strong>Findings: </strong></h4>
@@ -188,9 +192,11 @@ source(&quot;../01 Data/TitanicData.R&quot;, echo = TRUE)</code></pre>
 <pre class="r"><code>#source(&quot;../02 Visualizations/TitanicVisualization_3.R&quot;, echo = TRUE)</code></pre>
 <div id="method-2" class="section level4">
 <h4><strong>Method: </strong></h4>
+<p>In Visualization 3, we displayed the survival distribution based on Sex and Fare. We copied the data frame into a new local data frame, set x as discrete and y as continuous, followed by giving them their corresponding labels. The layer in this visualization set x as Sex and y as Fare. It is a point plot that graphs the people’s sex and corresponding fares in the x/y axis repectively, and the legend is separated and colored by whether the passengers survived or not.</p>
 </div>
 <div id="findings-2" class="section level4">
 <h4><strong>Findings: </strong></h4>
+<p>This visualization indicates that a greater proportion of the females survived, as compared to males, generally regardless of fare. Some females in the mid-range fare did not survive, while some males in the mid-range fare did survive. In addition, two males who paid above $500 survived.</p>
 <hr />
 </div>
 </div>
@@ -200,9 +206,11 @@ source(&quot;../01 Data/TitanicData.R&quot;, echo = TRUE)</code></pre>
 <pre class="r"><code>#source(&quot;../02 Visualizations/TitanicVisualization_4.R&quot;, echo = TRUE)</code></pre>
 <div id="method-3" class="section level4">
 <h4><strong>Method: </strong></h4>
+<p>In Visualization 4, we displayed the survival distribution based on Sex,Fare, and Passenger Class. We copied the data frame into a new local data frame, set x as discrete and y as continuous, followed by giving them their corresponding labels. In this visualization, we added a facet to create a matrix, with rows by passenger class and columns by survival. The layer in this visualization set x as Sex and y as Fare. It is a point plot that graphs the people’s sex and corresponding fares in the x/y axis repectively, and the legend is separated and colored by passenger sex.</p>
 </div>
 <div id="findings-3" class="section level4">
 <h4><strong>Findings: </strong></h4>
+<p>Among those who did survive, the visualization shows that, across passenger classes, there was not a big difference that sex made in the number of passengers who survived. However, among those who did not survive, we see that passenger class made a significant difference in the number of survivers. Although there are only a few females who did not survive from passenger class 1 and 2, passenger class 3 had a much greater number of non-survivers.</p>
 <hr />
 </div>
 </div>
