@@ -53,6 +53,7 @@ Again there did not seem to be a real trend between Age and Fare. Most people in
 
 ```{r}
 #source("../02 Visualizations/TitanicVisualization_3.R", echo = TRUE)
+#This visualization does not show any warnings
 ```
 
 ####**Method: **
@@ -68,10 +69,11 @@ This visualization indicates that a greater proportion of the females survived, 
 
 ```{r}
 #source("../02 Visualizations/TitanicVisualization_4.R", echo = TRUE)
+#This visualization does not show any warnings
 ```
 
 ####**Method: **
-In Visualization 4, we displayed the survival distribution based on Sex,Fare, and Passenger Class. We copied the data frame into a new local data frame, set x as discrete and y as continuous, followed by giving them their corresponding labels. In this visualization, we added a facet to create a matrix, with rows by passenger class and columns by survival. The layer in this visualization set x as Sex and y as Fare. It is a point plot that graphs the people's sex and corresponding fares in the x/y axis repectively, and the legend is separated and colored by passenger sex.
+In Visualization 4, we displayed the survival distribution based on Sex, Fare, and Passenger Class. We copied the data frame into a new local data frame, set x as discrete and y as continuous, followed by giving them their corresponding labels. In this visualization, we added a facet to create a matrix, with rows by passenger class and columns by survival. The layer in this visualization set x as Sex and y as Fare. It is a point plot that graphs the people's sex and corresponding fares in the x/y axis repectively, and the legend is separated and colored by passenger sex.
 
 ####**Findings: **
 Among those who did survive, the visualization shows that, across passenger classes, there was not a big difference that sex made in the number of passengers who survived. However, among those who did not survive, we see that passenger class made a significant difference in the number of survivers. Although there are only a few females who did not survive from passenger class 1 and 2, passenger class 3 had a much greater number of non-survivers.
@@ -83,13 +85,14 @@ Among those who did survive, the visualization shows that, across passenger clas
 
 ```{r}
 #source("../02 Visualizations/TitanicVisualization_5.R", echo = TRUE)
+#This visualization had a warning: NAs introduced by coercion
 ```
 
 ####**Method: **
-
+In Visualization 5, we compared the survival distribution of child passengers based on Sex, Fare, and Class. We copied the dataframe into a local data frame, set x as discrete and y as continuous and labeled both accordingly. A facet was added to create a matrix, with rows by passenger class and columns by survival, also labeled accordingly. The layer in this visualization set x as Sex and y as Fare. It is separate point plots that graph the children's sex and corresponding fare costs based on passenger class and survival result, and the legend is colored by passenger sex.
 
 ####**Findings: **
-
+From the visualization, we found that there was not much of a difference in survivability between sexes; passenger class was a greater indicator of survivability. More children survived in passenger classes 1 & 2, than those in passenger class 3. It seems also possible that there's a positive correlation between fare and passenger class (as passenger class goes higher from 3 to 1, the average fare cost increases).
 ***
 
 ###Visualization 6
@@ -97,10 +100,11 @@ Among those who did survive, the visualization shows that, across passenger clas
 
 ```{r}
 #source("../02 Visualizations/TitanicVisualization_6.R", echo = TRUE)
+#This visualization had a warning: NAs introduced by coercion
 ```
 
 ####**Method: **
-
+In Visualization 6, we compared the survival distribution of elderly passengers based on Se and Passenger Class. We defined "seniors" as anyone at least 40 years old, because the life expectancy of UK was around 51 for males and 55 for females, according to [an article](http://www.independent.co.uk/life-style/health-and-families/health-news/life-expectancy-in-britain-almost-30-years-higher-than-a-century-ago-10481491.html) from the Independent. We copied the dataframe into a local dataframe, set x as discrete and y as continuous and labeled both accordingly. A facet was added to create a matrix, with rows by passenger class and columns by survival, also labeled accordingly. The layer in this visualization set x as Sex and y as Count, because we wanted to display relevant information in a bar graph.The bar graph visualizes seniors' survival based on passenger class and the legend is colored by passenger sex.
 
 ####**Findings: **
-
+We found that among the seniors, females were more likely to survive in all three passenger classes; the ratio of female seniors who survived to those who did not survive is larger than the ratio of that of male seniors. We also found that seniors of classes 1 & 2 were more likely to survive than those of passenger class 3. These findings align with the statement that children and women were placed in lifeboats before others.
