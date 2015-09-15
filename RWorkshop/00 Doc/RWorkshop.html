@@ -69,15 +69,11 @@ img {
 <h3>This is how our RStudio is configured:</h3>
 <pre class="r"><code>sessionInfo()</code></pre>
 <pre><code>## R version 3.2.2 (2015-08-14)
-## Platform: x86_64-w64-mingw32/x64 (64-bit)
-## Running under: Windows 8 x64 (build 9200)
+## Platform: x86_64-apple-darwin13.4.0 (64-bit)
+## Running under: OS X 10.10.5 (Yosemite)
 ## 
 ## locale:
-## [1] LC_COLLATE=English_United States.1252 
-## [2] LC_CTYPE=English_United States.1252   
-## [3] LC_MONETARY=English_United States.1252
-## [4] LC_NUMERIC=C                          
-## [5] LC_TIME=English_United States.1252    
+## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
 ## 
 ## attached base packages:
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
@@ -237,7 +233,7 @@ source(&quot;../01 Data/TitanicData.R&quot;, echo = TRUE)</code></pre>
 #This visualization had a warning: NAs introduced by coercion</code></pre>
 <div id="method-5" class="section level4">
 <h4><strong>Method: </strong></h4>
-<p>In Visualization 6, we compared the survival distribution of elderly passengers based on Se and Passenger Class. We defined “seniors” as anyone at least 40 years old, because the life expectancy of UK was around 51 for males and 55 for females, according to <a href="http://www.independent.co.uk/life-style/health-and-families/health-news/life-expectancy-in-britain-almost-30-years-higher-than-a-century-ago-10481491.html">an article</a> from the Independent. We copied the dataframe into a local dataframe, set x as discrete and y as continuous and labeled both accordingly. A facet was added to create a matrix, with rows by passenger class and columns by survival, also labeled accordingly. The layer in this visualization set x as Sex and y as Count, because we wanted to display relevant information in a bar graph.The bar graph visualizes seniors’ survival based on passenger class and the legend is colored by passenger sex.</p>
+<p>In Visualization 6, we compared the survival distribution of elderly passengers based on Sex and Passenger Class. We defined “seniors” as anyone at least 40 years old, because the life expectancy of UK was around 51 for males and 55 for females, according to <a href="http://www.independent.co.uk/life-style/health-and-families/health-news/life-expectancy-in-britain-almost-30-years-higher-than-a-century-ago-10481491.html">an article</a> from the Independent. We copied the dataframe into a local dataframe, set x as discrete and y as continuous and labeled both accordingly. A facet was added to create a matrix, with rows by passenger class and columns by survival, also labeled accordingly. The layer in this visualization set x as Sex and y as Count, because we wanted to display relevant information in a bar graph.The bar graph visualizes seniors’ survival based on passenger class and the legend is colored by passenger sex.</p>
 </div>
 <div id="findings-5" class="section level4">
 <h4><strong>Findings: </strong></h4>

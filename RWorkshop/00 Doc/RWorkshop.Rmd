@@ -17,11 +17,9 @@ source("../01 Data/TitanicData.R", echo = TRUE)
 ***
 
 ###Visualization 1
-![](./Rplot1.png)
 
 ```{r}
-#source("../02 Visualizations/TitanicVisualization_1.R", echo = TRUE)
-#Not sure if this is really needed?? gives html messy look with errors at end Can we just give more explanation in the method section? 
+source("../02 Visualizations/TitanicVisualization_1.R", echo = TRUE)
 ```
 
 ####**Method: **
@@ -33,11 +31,9 @@ There did not seem to be a real trend between Age and Fare. Most people in gener
 ***
 
 ###Visualization 2
-![](./Rplot2.png)
 
 ```{r}
-#source("../02 Visualizations/TitanicVisualization_2.R", echo = TRUE)
-#Not sure if this is really needed?? gives html messy look with errors at end Can we just give more explanation in the method section? 
+source("../02 Visualizations/TitanicVisualization_2.R", echo = TRUE)
 ```
 
 ####**Method: **
@@ -49,11 +45,9 @@ Again there did not seem to be a real trend between Age and Fare. Most people in
 ***
 
 ###Visualization 3
-![](./Rplot3.png)
 
 ```{r}
-#source("../02 Visualizations/TitanicVisualization_3.R", echo = TRUE)
-#This visualization does not show any warnings
+source("../02 Visualizations/TitanicVisualization_3.R", echo = TRUE)
 ```
 
 ####**Method: **
@@ -65,11 +59,9 @@ This visualization indicates that a greater proportion of the females survived, 
 ***
 
 ###Visualization 4
-![](./Rplot4.png)
 
 ```{r}
-#source("../02 Visualizations/TitanicVisualization_4.R", echo = TRUE)
-#This visualization does not show any warnings
+source("../02 Visualizations/TitanicVisualization_4.R", echo = TRUE)
 ```
 
 ####**Method: **
@@ -81,11 +73,9 @@ Among those who did survive, the visualization shows that, across passenger clas
 ***
 
 ###Visualization 5
-![](./Rplot5.png)
 
 ```{r}
-#source("../02 Visualizations/TitanicVisualization_5.R", echo = TRUE)
-#This visualization had a warning: NAs introduced by coercion
+source("../02 Visualizations/TitanicVisualization_5.R", echo = TRUE)
 ```
 
 ####**Method: **
@@ -96,11 +86,9 @@ From the visualization, we found that there was not much of a difference in surv
 ***
 
 ###Visualization 6
-![](./Rplot6.png)
 
 ```{r}
-#source("../02 Visualizations/TitanicVisualization_6.R", echo = TRUE)
-#This visualization had a warning: NAs introduced by coercion
+source("../02 Visualizations/TitanicVisualization_6.R", echo = TRUE)
 ```
 
 ####**Method: **
